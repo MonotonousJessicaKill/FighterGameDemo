@@ -1,0 +1,23 @@
+父类---飞行物 FlyingObject   接口 Enemy--得分
+派生类--1.Hero             接口 Award--奖励（a，加生命值 b，双倍火力）
+		2.Airplane
+		3.bee
+		4.Bullet
+主类---ShootGame类
+
+
+调step方法---定时触发（定时器）
+---引入Timer类，schedule方法定时触发（要干的事task，interval（时间），每多久调一次task）
+
+每10ms让飞行物走一次
+
+算法---数组的操作
+侦听--listener  面板去侦听鼠标事件
+
+子弹打敌人
+	1.FlyingObject----shootBy(bullet b){}
+	2.当敌人被打倒
+		敌人消失
+		英雄加分或的奖励
+	3。每一个子弹都要和敌人比
+		若shhotBy为true：删除敌人，并获得奖励加分
